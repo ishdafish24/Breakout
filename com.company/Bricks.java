@@ -6,8 +6,8 @@ import java.awt.*;
 
 public class Bricks extends Rectangle2D{
     private Color color;
-    public final static int HEIGHT = Breakout.HEIGHT /2 /* / BreakoutPanel.NUM_ROWS */;
-    public final static int WIDTH = Breakout.WIDTH / 2 /* / BreakoutPanel.NUM_COLUMNS */;
+    public final static int HEIGHT = Breakout.HEIGHT /2 / BreakoutPanel.NUM_ROWS ;
+    public final static int WIDTH = Breakout.WIDTH / 2 / BreakoutPanel.NUM_COLUMNS;
 
 
     public Bricks(double x, double y, double w, double h, Color c){
