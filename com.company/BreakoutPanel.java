@@ -18,11 +18,12 @@ public class BreakoutPanel extends JPanel{
         bit.draw(g);
     }
     public void instantiateBricks(Graphics g){
-        ArrayList<Integer>[][] bricks = new ArrayList[NUM_ROWS][NUM_COLUMNS];
+        ArrayList<Bricks>[][] bricksList = new ArrayList[NUM_ROWS][NUM_COLUMNS];
         for (int r = 0; r < NUM_ROWS; r++) {
             for (int c = 0; c < NUM_COLUMNS; c++) {
                 Bricks b = new Bricks(r, c, 100, 100, Color.RED);
                 b.draw(g);
+                bricksList[r][c] = b;
             }
         }
     }
