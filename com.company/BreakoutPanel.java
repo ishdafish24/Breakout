@@ -24,6 +24,7 @@ public class BreakoutPanel extends JPanel{
                 Bricks b = new Bricks(r, c, 100, 100, Color.RED);
                 b.draw(g);
                 bricksList[r][c] = b;
+                bricksList.add(new Bricks(r,c,100,100, Color.RED);
             }
         }
     }
